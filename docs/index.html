@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>专业数字货币交易所系统与区块链解决方案</title>
+    <script>
+        // 检测用户语言
+        function detectLanguage() {
+            var userLang = navigator.language || navigator.userLanguage;
+            var preferredLang = userLang.substring(0, 2).toLowerCase();
+            
+            // 如果是中文，加载中文内容
+            if (preferredLang === 'zh') {
+                window.location.href = 'zh.html';
+            } else {
+                // 其他语言加载英文内容
+                window.location.href = 'en.html';
+            }
+        }
+        
+        // 页面加载时执行
+        window.onload = detectLanguage;
+    </script>
+</head>
+<body>
+    <p>Redirecting to the appropriate language version...</p>
+</body>
+</html> 
